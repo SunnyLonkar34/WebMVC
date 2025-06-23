@@ -3,7 +3,7 @@ using WebMVC.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-
+//get
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
