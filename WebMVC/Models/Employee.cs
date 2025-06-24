@@ -14,6 +14,9 @@
         public string City { get; set; } = string.Empty;
 
 
+        public CompanyDetail Company { get; set; } 
+
+
     }
   
 }
