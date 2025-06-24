@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddScoped<IEmployeeRepository, SqlEmployeeRepository>();//whenever someone will ask parent object this will provide him 
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();//whenever someone will ask parent object this will provide him 
 
 builder.Services.AddScoped<EmployeeDbContext, EmployeeDbContext>();
 

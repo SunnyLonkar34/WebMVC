@@ -28,13 +28,15 @@ namespace WebMVC.Repository
         public void DeleteEmployee(int id)
         {
             var employee = _employees.First(emp => emp.Id == id);
+           
             _employees.Remove(employee);
         }
 
         public Employee GetEmployeeById(int id)
         {
             //Linq = Language Integrated Query
-            var employee = _employees.First(emp => emp.Id == id);  
+            var employee = _employees.First(emp => emp.Id == id);
+            employee.Company = new CompanyDetail() { Id = 1, CompanyName = "Winjit", CompanyNumber = "123456789" };
             return employee;
         }
 
